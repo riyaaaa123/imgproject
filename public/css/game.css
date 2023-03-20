@@ -1,0 +1,101 @@
+
+
+.container{
+  
+  box-sizing: border-box;
+}
+
+h2{
+  font-family: 'Eczar', serif;
+  font-size: 1rem;
+  line-height: 5rem;
+}
+.choice-container {
+  
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgba(37, 47, 57, 0.25);
+    border-radius: 1rem;
+    background-color: white;
+  }
+  
+  .choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(158, 72, 208, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+  .choice-prefix {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1.5rem 2.5rem; */
+    background-color:rgba(158, 72, 208, 0.5);
+    color: white;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem ;
+  }
+  
+  .choice-text {
+    font-family: 'Shantell Sans', cursive;
+  font-size: 2rem;
+    padding: 1.5rem;
+    width: 100%;
+  }
+  
+  .correct {
+    
+    background-color: #7dcf8f;
+    
+  }
+  .correct .choice-text, .incorrect .choice-text{
+    color: azure;
+  }
+  .correct .choice-prefix{
+    background-color: #2e9f47;
+  }
+  
+  .incorrect {
+    background-color: #f17985;
+    
+  }
+  .incorrect .choice-prefix{
+    background-color: #d12436;
+  }
+  
+  /* HUD */
+  
+  #hud {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .hud-main-text {
+    text-align: center;
+    color: rgba(158, 72, 208, 0.5);
+  }
+  
+  #progressBar {
+    width: 20rem;
+    height: 2rem;
+    border: 0.1rem solid rgba(115, 111, 111, 0.5);
+    margin-top: 1rem;
+  }
+  
+  #progressBarFull {
+    height: 100%;
+    background-color: rgba(191, 120, 232, 0.5);
+    width: 0%;
+    border-right: 2px solid rgb(0, 0, 0);
+    transition: all 1s;
+    
+  }

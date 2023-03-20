@@ -1,0 +1,122 @@
+:root{
+    background-color: #f5eafc;
+}
+.loader {
+
+
+display: flex;
+width: 100vw;
+height: 100vh;
+justify-content: center;
+}
+
+.num{
+font-family: 'Sigmar One', cursive;
+position: absolute;
+
+font-size: 6rem;
+
+}
+#id1 {
+flex-direction: column;
+justify-self: center;
+align-self: center;
+animation: id1 1s 1;
+color: #f5eafc;
+}
+#id2 {
+  justify-self:center;
+align-self: center;
+animation: id2 1s linear 1;
+animation-delay: 1s;
+
+
+color: #f5eafc;
+}
+#id3 {
+justify-self: center;
+align-self: center;
+animation: id3 1s linear 1;
+
+animation-delay: 2s;
+color: #f5eafc;
+}
+
+@keyframes id1 {
+0% {
+  color: black;
+  z-index: 1000;
+}
+10% {
+  color: rgb(93, 13, 139);
+  z-index: 1000;
+}
+15% {
+  color: rgb(91, 14, 101);
+  z-index: 1000;
+}
+20% {
+  color: rgb(150, 32, 183);
+  z-index: 1000;
+}
+25%{
+  color: rgb(196, 83, 170);
+}
+100% {
+  color: #f5eafc;
+  z-index: -1;
+  
+}
+}
+@keyframes id2 {
+0% {
+    z-index: 1001;
+  color: rgb(0, 0, 0);
+}
+10% {
+  color: rgb(93, 13, 139);
+  z-index: 1000;
+}
+15% {
+  color: rgb(91, 14, 101);
+  z-index: 1000;
+}
+20% {
+  color: rgb(150, 32, 183);
+  color: rgb(91, 14, 101);
+  z-index: 1000;
+}
+25%{
+  color: rgb(196, 83, 170);
+}
+100% {
+  color: #f5eafc;
+  z-index: -1;
+}
+}
+
+@keyframes id3 {
+0% {
+  color: black;
+}
+10% {
+  color: rgb(93, 13, 139);
+  z-index: 1000;
+}
+15% {
+  
+  color: rgb(91, 14, 101);
+  z-index: 1000;
+}
+20% {
+  color: rgb(150, 32, 183);
+  
+  z-index: 1000;
+}
+25%{
+  color: rgb(196, 83, 170);
+}
+100% {
+  color: #f5eafc;
+}
+}
